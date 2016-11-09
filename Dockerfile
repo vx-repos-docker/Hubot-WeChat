@@ -2,9 +2,8 @@ FROM killuavx/hubot-base
 MAINTAINER Ranger.Huang <killua.vx@gmail.com>
 ENV REFRESH_AT 2016-09-01
 
-RUN git clone git@github.com:KasperDeng/Hubot-WeChat.git && \
-       cd Hubot-WeChat && npm install && cd .. && rm -rf Hubot-WeChat
-# RUN npm install hubot-weixin
+
+RUN npm install hubot-weixin>=1.0.8
 
 #https://github.com/KasperDeng/Hubot-WeChat
 #https://www.npmjs.com/package/hubot-weixin
